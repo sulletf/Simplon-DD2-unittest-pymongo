@@ -6,7 +6,7 @@ from MongoDB import Film, Actor
 class TestFilmMethods(unittest.TestCase):
 
     def test_get_nb_films(self):
-        self.assertEqual(Film.get_nb_films(db), 0)
+        self.assertEqual(Film.get_nb_films(db), 450)
 
 if __name__ == '__main__':
     client = MongoClient('localhost', 27017)
