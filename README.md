@@ -28,9 +28,9 @@ Il faut maintenant remplir la collection *actors* de la base *unittest_pymongo*.
 
 1. modifier la méthode *get_actors* de la classe *Film* dans *MongoDB.py* pour qu'elle retourne la liste d'acteurs d'un film.
 2. ajouter un test unitaire de cette méthode dans *unittests.py* qui sera exécuté pour vérification 
-3. en s'inspirant du script *fill_films.py*, créer le script *fill_actors* pour remplir la collection *actors*. **Attention !** : en regardant bien dans la collection *films*, on voit que les noms d'acteurs d'un film sont "sales" : les nettoyer avant de charger la collection *actors*.
+3. en s'inspirant du script *fill_films.py*, créer le script *fill_actors.py* pour remplir la collection *actors*. **Attention !** : en regardant bien dans la collection *films*, on voit que les noms d'acteurs d'un film sont "sales" : les nettoyer avant de charger la collection *actors*.
 4. modifier la méthode *get_nb_actors* de la classe *Actor* dans *MongoDB.py* pour qu'elle retourne le bon nombre d'acteurs.
-5. ajouter un test unitaire dans *unittests.py* pour vérifier la dernière modification (créer une nouvelle classe nommée *TestFilmMethods*.
+5. ajouter un test unitaire dans *unittests.py* pour vérifier la dernière modification (créer une nouvelle classe nommée *TestActorsMethods*).
 
 ## Pendant ce temps là, moi je...
 ...fais en sorte d'enrichir le site pour qu'il soit plus pro
