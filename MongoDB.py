@@ -27,7 +27,8 @@ class Actor:
 
   def load(self, db):
     # ajoute l'acteur dans la base de données
-    pass
+    _id = db.actors.insert_one({'name' : self.name, 'films' : self.films})
+    return _id
 
   def get_nb_actors(db):
     # retourne le nombre d'acteurs présents dans la base
