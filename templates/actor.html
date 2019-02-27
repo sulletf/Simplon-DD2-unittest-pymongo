@@ -29,11 +29,11 @@
 
 <div class="w3-container" style="padding:32px">
 
-<h2>The actors in our database</h2>
+<h2>{{actor_name}}</h2>
 
 <ul>
-    {% for actor in actor_list %}
-    <li><a href="/actor?actor_name={{actor['name']}}">{{actor['name']}}</a></li>
+    {% for film in actor_film_list %}
+    <li>{{film}}</li>
     {% endfor %}
   </ul>
 </div>

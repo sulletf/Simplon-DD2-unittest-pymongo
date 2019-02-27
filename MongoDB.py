@@ -32,7 +32,7 @@ class Actor:
 
   def get_nb_actors(db):
     # retourne le nombre d'acteurs présents dans la base
+    actors = db.actors
 
-    return 0
-    
+    return actors.count()
 

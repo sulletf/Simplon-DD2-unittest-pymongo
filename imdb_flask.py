@@ -13,11 +13,15 @@ def home():
 
 @app.route("/films")
 def films():
-    return render_template('films.html')
+    return render_template('films.html', film_list = db.films.find())
 
 @app.route("/actors")
 def actors():
-    return render_template('actors.html')
+    return render_template('actors.html', actor_list = db.actors.find())
+
+@app.route("/actor")
+def actor():
+    return render_template('actor.html', actor_name = 'Tom Cruise', actor_film_list = ['Vanilla sky', 'Rain Man'])
 
 if __name__ == "__main__":
     client = MongoClient('localhost', 27017)
